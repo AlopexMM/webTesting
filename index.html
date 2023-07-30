@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<body onload="database()">
+    <header>
+        <h1>Caja</h1>
+    </header>
+    <main>
+        <div>
+            <label for="barcode">Codigo de barra: </label>
+            <input type="text" name="barcode" id="barcode">
+        </div>
+        <div>
+            <form>
+                <select name="manga-list" id="manga-list">
+                    <option value="">Buscar producto...</option>
+                    <option value="97884179020357">Death Note 5</option>
+                    <option value="9789871071685">Vagabond 1</option>
+                    <option value="9789871071814">Vagabond 2</option>
+                </select>
+                <input type="button" onclick="appendProduct()" value="Agregar">
+            </form>
+            
+        </div>
+        <div>
+            <table id="products">
+                <tr id="col-name">
+                    <th>Codigo</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </table>
+            <form>
+                <label for="">Total: $ <span id="total-amount">0</span></label>
+                <input type="button" value="Pagar" onclick="pay()">
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
