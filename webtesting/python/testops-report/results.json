@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "description": null,
+      "duration": 53,
+      "errors": [],
+      "host": "WKWZTJPPdwu93YR",
+      "name": "checkout/Checkout.py::test_barcode_label_present",
+      "parameters": {},
+      "parentUuid": "e1711ee9-7d9e-4763-9943-db5a405dbd18",
+      "start": 1691793864200,
+      "status": "PASSED",
+      "stop": 1691793864253,
+      "suiteName": "checkout/Checkout.py",
+      "thread": "WKWZTJPPdwu93YR.MainThread(13416)",
+      "uuid": "7493e1b2-55f1-47f8-a852-6185bcc3678b"
+    },
+    {
+      "description": null,
+      "duration": 105,
+      "errors": [],
+      "host": "WKWZTJPPdwu93YR",
+      "name": "checkout/Checkout.py::test_barcode_input_error",
+      "parameters": {},
+      "parentUuid": "e1711ee9-7d9e-4763-9943-db5a405dbd18",
+      "start": 1691793872485,
+      "status": "PASSED",
+      "stop": 1691793872590,
+      "suiteName": "checkout/Checkout.py",
+      "thread": "WKWZTJPPdwu93YR.MainThread(13416)",
+      "uuid": "27ee8c8a-006b-4c13-b0bb-a07540f08e04"
+    }
+  ]
+}

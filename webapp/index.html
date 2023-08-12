@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body onload="database()">
-    <header>
+    <header class="header">
         <h1>Caja</h1>
     </header>
-    <main>
-        <div>
-            <label for="barcode">Código de barra: </label>
-            <input type="text" name="barcode" id="barcode">
+    <main class="main">
+        <div class="register-products">
+            <div>
+                <label for="barcode">Código de barra: </label>
+                <input type="text" name="barcode" id="barcode">
+            </div>
+            <div>
+                <form>
+                    <select name="manga-list" id="manga-list">
+                        <option value="">Buscar producto...</option>
+                        <option value="97884179020357">Death Note 5</option>
+                        <option value="9789871071685">Vagabond 1</option>
+                        <option value="9789871071814">Vagabond 2</option>
+                    </select>
+                    <input type="button" onclick="appendProduct()" value="Agregar">
+                </form>
+            </div>
         </div>
-        <div>
-            <form>
-                <select name="manga-list" id="manga-list">
-                    <option value="">Buscar producto...</option>
-                    <option value="97884179020357">Death Note 5</option>
-                    <option value="9789871071685">Vagabond 1</option>
-                    <option value="9789871071814">Vagabond 2</option>
-                </select>
-                <input type="button" onclick="appendProduct()" value="Agregar">
-            </form>
-            
-        </div>
-        <div>
+        <div class="list-products">
             <table id="products">
                 <tr id="col-name">
                     <th>Codigo</th>
@@ -35,6 +37,8 @@
                     <th>Acciones</th>
                 </tr>
             </table>
+        </div>
+        <div class="pay-products">
             <form>
                 <label for="">Total: $ <span id="total-amount">0</span></label>
                 <input type="button" value="Pagar" onclick="pay()">

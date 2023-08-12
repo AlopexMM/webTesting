@@ -1,0 +1,16 @@
+{
+  "suites": [
+    {
+      "description": null,
+      "duration": 8389,
+      "host": "WKWZTJPPdwu93YR",
+      "name": "checkout/Checkout.py",
+      "parentUuid": "6bb8534f-7b2f-4980-b854-f139b68e0dea",
+      "start": 1691793864201,
+      "status": null,
+      "stop": 1691793872590,
+      "thread": "WKWZTJPPdwu93YR.MainThread(13416)",
+      "uuid": "e1711ee9-7d9e-4763-9943-db5a405dbd18"
+    }
+  ]
+}

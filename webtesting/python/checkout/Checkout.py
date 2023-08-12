@@ -2,8 +2,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 
-from time import sleep
-
 import pytest
 
 def test_barcode_label_present(chrome_driver):
@@ -23,18 +21,3 @@ def test_barcode_input_error(chrome_driver):
     #sleep(10)
     alert = chrome_driver.switch_to.alert
     assert alert.text == 'Código no encontrado'
-
-def test_look_for_product():
-    pass
-
-
-def test_register_table():
-    pass
-
-
-def test_total_alert():
-    pass
-
-
-def test_smoke():
-    pass

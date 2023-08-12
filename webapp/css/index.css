@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    align-content: center;
+    display:contents;
+}
+
+.register-products {
+    background-color: blue;
+}
+
+.list-products {
+    background-color: green;
+}
+
+.pay-products {
+    background-color: purple;
+}
