@@ -3,12 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.header {
-    background-color: black;
-    color: white;
-    align-content: center;
-    display:contents;
+body {
+    display: flex;
+    justify-content: center;
+}
+main {
+    display: flex;
+    min-width: 600px;
+    min-height: 600px;
+    margin: 20px;
+    flex-direction: column;
 }
 
 .register-products {
@@ -17,6 +21,7 @@
 
 .list-products {
     background-color: green;
+    min-height: 200px;
 }
 
 .pay-products {
