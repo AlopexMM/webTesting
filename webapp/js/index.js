@@ -22,14 +22,16 @@ function registerProduct(bc) {
         const name = document.createElement("td");
         name.textContent = data.name;
         const price = document.createElement("td");
-        price.textContent = data.price;
+        price.textContent = `$${data.price}`;
         const action = document.createElement('td');
         const deleteButton = document.createElement('button');
         deleteButton.onclick = function(){deleteItem(bc)};
         deleteButton.textContent = 'Borrar'
         action.appendChild(deleteButton)
         
+        const tbody = document.getElementsByTagName("tbody")[0];
         const row = document.createElement("tr");
+        row.classList.add("row-template")
         row.id = bc
         row.appendChild(code);
         row.appendChild(name);
@@ -37,8 +39,7 @@ function registerProduct(bc) {
         row.appendChild(action);
 
 
-        const table = document.getElementById("products");
-        table.appendChild(row);
+        tbody.appendChild(row)
         const totalAmount = parseFloat(document.getElementById('total-amount').textContent) + parseFloat(data.price);
         document.getElementById('total-amount').textContent = totalAmount.toString();
     

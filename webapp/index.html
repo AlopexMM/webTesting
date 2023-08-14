@@ -6,6 +6,7 @@
     <title>Checkout</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body onload="database()">
     <main>
         <div class="register-products">
@@ -26,13 +27,18 @@
             </div>
         </div>
         <div class="list-products">
-            <table id="products">
-                <tr id="col-name">
-                    <th>Codigo</th>
-                    <th>Descripción</th>
-                    <th>Precio</th>
-                    <th>Acciones</th>
-                </tr>
+            <table id="products" class="products">
+                <thead>
+                    <tr id="col-name" class="row-template">
+                        <th class="cell">Codigo</th>
+                        <th class="cell">Descripción</th>
+                        <th class="cell">Precio</th>
+                        <th class="cell">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
             </table>
         </div>
         <div class="pay-products">

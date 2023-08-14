@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
 }
+
 body {
     display: flex;
     justify-content: center;
@@ -20,8 +25,19 @@ main {
 }
 
 .list-products {
-    background-color: green;
     min-height: 200px;
+}
+
+.products {
+    border: thick double;
+    border-radius: 2%;
+    width: 100%;
+}
+
+.row-template {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 2fr;
+    text-align: center;
 }
 
 .pay-products {

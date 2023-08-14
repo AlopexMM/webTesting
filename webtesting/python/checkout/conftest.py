@@ -1,7 +1,7 @@
 import pytest
 from selenium.webdriver import Chrome
 
-pytest_plugins = ["testops_pytest.listener",]
+pytest_plugins = []
 @pytest.fixture(scope='function')
 def chrome_driver():
     driver = Chrome()
