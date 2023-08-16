@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #282D35;
+}
+
+.nav {
+  display: flex;
+  background-color: #21222A;
+  align-items: center;
+  height: 91px;
+}
+
+.nav-logo {
+  height: 42px;
+}
+
+.nav-logo-title {
+  font-weight: 700;
+  color: #61DAFB;
+  font-size: 24px;
+  margin-right: auto;
+}
+
+.nav-text-course {
+  font-weight: 600;
+  font-size: 16px;
+  color: #DEEBF8;
+  margin-right: 10px;
+}
+
+main {
+  min-height: 459px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.list-container {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  padding-left: 15%;
+  font-size: 14x
+}
+
+.list {
+  list-style-type: disc;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.item::marker {
+  color: #61DAFB;
+  font-size: 1.5rem;
+}
+
+.item {
+  padding-block: 2%;
+}
+
+.watermark-container {
+  position: absolute;
+  right: 0;
+}
+.watermark {
+  height: 293px;
+  width: 293px;
+}
