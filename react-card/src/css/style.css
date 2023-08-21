@@ -8,7 +8,17 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
   background-color: #282D35;
+  background-image: url("../images/Group.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 500px;
+  height: 550px;
 }
 
 .nav {
@@ -16,6 +26,8 @@ body {
   background-color: #21222A;
   align-items: center;
   height: 91px;
+  width:100%;
+
 }
 
 .nav-logo {
@@ -36,18 +48,19 @@ body {
   margin-right: 10px;
 }
 
-main {
-  min-height: 459px;
-}
-
 .title-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 40px 20px;
   font-weight: 700;
   font-size: 16px;
   color: #FFFFFF;
   margin-bottom: 10px;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .list-container {
@@ -72,13 +85,4 @@ main {
 
 .item {
   padding-block: 2%;
-}
-
-.watermark-container {
-  position: absolute;
-  right: 0;
-}
-.watermark {
-  height: 293px;
-  width: 293px;
 }

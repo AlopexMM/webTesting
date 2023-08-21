@@ -3,8 +3,7 @@ import logo from '../images/logo.svg'
 
 function Main(){
     return (
-    <main className='main-container'>
-        <div className='fill'></div>
+    <main>
         <div className='title-container'>
             <h1>Fun facts about React</h1>
         </div>
@@ -17,10 +16,6 @@ function Main(){
                 <li className='item'>Power thousands of enterprise apps, including mobile apps</li>
             </ul>
         </div>
-        <div className='watermark-container'>
-            <img src={logo} alt='watermark' className='watermark'/>
-        </div>
-        
     </main>
 )};
 

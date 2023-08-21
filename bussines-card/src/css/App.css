@@ -1,0 +1,94 @@
+:root {
+  --title-weight: 700;
+  --title-size: 25px;
+  --title-color: #fff;
+  --second-title-weight: 400;
+  --second-title-size: 16px;
+  --second-title-color: #F3BF99;
+  --paragraph-weight: 300;
+  --paragraph-size: 12px;
+  --paragraph-color: #fff;
+
+}
+
+.container {
+  width: 550px;
+  height: 868px;
+  margin-top: 10%;
+  background-color: #23252C;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  background-color: #1A1B21;
+  width: 317px;
+  height: 780px;
+  border-radius: 30px;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Info, .about, .interests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Info > img {
+  border-radius: 10% 10% 0% 0%;
+}
+
+.info-text {
+  padding: 5%;
+}
+
+.buttons {
+  display: flex;
+}
+
+.title {
+  font-weight: var(--title-weight);
+  font-size: var(--title-size);
+  color: var(--title-color);
+}
+
+.second-title {
+  font-weight: var(--second-title-weight);
+  font-size: var(--second-title-size);
+  color:var(--second-title-color)
+}
+
+.paragraph {
+  font-weight: var(--paragraph-weight);
+  font-size: var(--paragraph-size);
+  color: var(--paragraph-color);
+}
+
+.about-title, .interests-title {
+  margin-top: 5%;
+  align-self: flex-start;
+  margin-left: 12%;
+}
+
+.about-paragraph, .interests-paragraph {
+  margin-left: 12%;
+}
+
+.interests {
+  margin-bottom: auto;
+}
+.footer {
+  background-color: #161619;
+  height: 64px;
+  border-radius: 0% 0% 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-items {
+  height: 25px;
+  padding: 3%;
+}
