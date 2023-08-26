@@ -1,0 +1,108 @@
+:root {
+    --title-size: 36px;
+    --title-color: #000;
+    --title-weight: 600;
+    --paragraph-weight:300;
+    --paragraph-size: 16px;
+    --paragraph-color: #222;
+}
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2.98px 7.46px #000;
+}
+
+.logo {
+    margin-left: 3%;
+}
+section {
+    padding: 20px;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation--image {
+    width: 300px;
+    align-self: center;
+}
+
+.presentation--title {
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+    color: var(--title-color);
+    align-self: baseline;
+    inline-size: 320px;
+    white-space: nowrap;
+}
+
+.presentation--paragraph {
+    font-size: var(--paragraph-size);
+    font-weight: var(--paragraph-weight);
+    color: var(--paragraph-color);
+    inline-size: 320px;
+    overflow-wrap:break-word;
+    align-self: baseline;
+}
+
+.cards {
+    display: flex;
+    overflow: scroll;
+    align-items: flex-end;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 12px;
+    font-weight: var(--paragraph-weight);
+    color: var(--paragraph-color);
+    padding-left: 1px;
+    padding-right: 1px;
+    inline-size: 100%;
+    white-space: nowrap;
+}
+
+.card-text-color {
+    color: #918E9B;
+}
+
+.img-card {
+    width: 176px;
+}
+
+.status-box {
+    background-color: #fff;
+    position: relative;
+    top: 35px;
+    left: 15px;
+    width: 61px;
+    text-align: center;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+.status-text {
+    font-size: 10px;
+}
+
+.starimg {
+    width: 14px;
+    height: 14px;
+    padding-right: 2px;
+}
